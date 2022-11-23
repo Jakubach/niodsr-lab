@@ -1,0 +1,12 @@
+[Unit]
+Description=Moj serwis.
+
+[Service]
+User=jakub
+WorkingDirectory=/home/jakub/Desktop/
+ExecStart=/home/jakub/Desktop/service_task.sh
+Restart=always
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
