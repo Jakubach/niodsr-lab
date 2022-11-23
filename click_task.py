@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import click
 import datetime
 import random
@@ -6,7 +7,7 @@ import random
 @click.option('--path', default='/home/jakub/Desktop/my_file.txt', help='Path to the file')
 @click.option('--time',default=1,help='Where to save.')
 
-def hello(path, time):
+def save_number(path, time):
     previous_time = datetime.datetime.now()
     while(1):
         current_time = datetime.datetime.now()
@@ -17,3 +18,7 @@ def hello(path, time):
             previous_time = current_time
 
     
+
+if __name__ == '__main__':
+    save_number()
+
