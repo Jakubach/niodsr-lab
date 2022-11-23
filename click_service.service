@@ -1,0 +1,12 @@
+[Unit]
+Description=Moj serwis.
+
+[Service]
+User=jakub
+WorkingDirectory=/home/jakub/dev/click_task
+ExecStart=/home/jakub/dev/click_task/click_task.py
+Restart=always
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
